@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eramen-contactus</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body style ="background: url(./Assets/background.jpg);
+              background-size: cover;
+              background-repeat:no-repeat;
+              background-attachment: fixed;">
+
+    <header class="headerContainer">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="./Assets/5900192.png" alt="">
+            </a>
+        </div>
+        <div class="headerdetail">
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="Home">Home</a></li>
+                    <li><a href="products.html" class="Product">Product</a></li>
+                    <li><a href="aboutus.html" class="AboutUs">About Us</a></li>
+                    <li><a href="contactus.html" class="ContactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="formcontainer">
+            <form action="" onsubmit="return val()">
+                <div>
+                    <input placeholder="Name" type="text" id="name" class="nameval">
+                </div>
+    
+                <div>
+                    <input type="email" id="email" placeholder="Email Address" class="emailval">
+                </div>
+    
+                <div>
+                    <input type="tel" id="phone" placeholder="Phone Number" class="phoneval">
+                </div>
+    
+                <div>
+                    <select name="format" id="format" class="select">
+                        <option selected disabled>Choose your preference</option>
+                        <option value="dry">Dry Ramen</option>
+                        <option value="regular">Regular Ramen</option>
+                    </select>
+                </div>
+    
+                <div class="check" style="margin-top: 2rem;">
+                    <input type="checkbox" id="agree-term">
+                    <label for="agree-term">I agree to receive the newsletter</label>
+                </div>
+    
+                <input type="submit" class="form-btn">
+            </form>
+        </div>
+    
+        <div class="reference">
+            <a href="reference.html" class="reflink">references</a>
+        </div>
+    </main>
+
+    <footer class="footercontainer">
+        <div class="section">
+
+        </div>
+        <div class="fdetail">
+            <div class="Etext">
+                <h4>E-Ramen</h4>
+            </div>
+            <div class="flogo">
+                <a href="Home.html">
+                    <img src="./Assets/5900192.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="contactus.js"></script>
+</body>
+</html>

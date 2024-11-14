@@ -1,0 +1,270 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Kavivanar';
+    src: url('./Assets/Kavivanar-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+  
+body {
+    margin: 0;
+    font-family: "Kavivanar";
+    background-color: var(--bg);
+    color: #fff;
+    font-size: 16px;
+}
+
+.headerContainer{
+    position: fixed;
+    display: flex;
+    max-width: 100vw;
+    height: 20vh;
+    padding: 0 2em;
+    border-radius: 0px 0px 10px 10px;
+    inset: 0;
+    background-color: #FDD86C;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+    z-index: 1;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 6em;
+    height: 60%;
+    left: 0;    
+    z-index: -2;
+    outline: 1px transparent;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.headerContainer .Home{
+    margin: 0px 40px;
+    padding: 0 0 0 10px;
+    /* right: 30px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: "Kavivanar";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    outline: none;
+}
+
+.headerContainer .Product, .headerContainer .AboutUs, .headerContainer .ContactUs{
+    margin: 0px 40px;
+    padding: 0 0 0 10px;
+    /* right: 30px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: "Kavivanar";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    outline: none;
+}
+
+div{
+    left: 0;
+    margin: 0;
+}
+
+nav{
+    position: relative;
+    /* outline: 1px solid red; */
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.formcontainer{
+    position: absolute;
+    width: 1074px;
+    height: 1264px;
+    left: calc(50% - 1074px/2 + 2px);
+    top: 345px;
+    justify-content: center;
+    background: #AEA8A5;
+    border-radius: 5px;
+}
+
+.mascot{
+    position: absolute;
+    justify-content: center;
+    width: 800px;
+    height: 700px;
+    left: calc(50% - 407px/2 + 0.5px);
+    top: 145px;
+    border-radius: 267px;
+}
+
+.mascot img{
+    object-fit: cover;
+    width: 398px;
+    height: 320px;
+    border-radius: 267px;
+}
+
+.link1{
+    position: absolute;
+    width: 986px;
+    height: 77px;
+    left: calc(50% - 986px/2);
+    top: 450px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52.7289px;
+    line-height: 78px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+}
+
+.link2{
+    position: absolute;
+    width: 986px;
+    height: 86px;
+    left: calc(50% - 986px/2 + 17px);
+    top: 600px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52.7289px;
+    line-height: 78px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+}
+
+.link3{
+    position: absolute;
+    width: 847px;
+    height: 75px;
+    left: calc(50% - 847px/2 + 1.5px);
+    top: 750px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52.7289px;
+    line-height: 78px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+}
+
+.link4{
+    position: absolute;
+    width: 986px;
+    height: 83px;
+    left: calc(50% - 986px/2 + 2px);
+    top: 900px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52.7289px;
+    line-height: 78px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+}
+
+.section{
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontainer{
+    position: absolute;
+    display: flex;
+    max-width: 100vw;
+    height: 235px;
+    top: 1890px;
+    padding: 0 47.44em;
+    background: #46453F;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    outline: 1px solid black;
+}
+
+.fdetail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.Etext{
+    position: absolute;
+    width: 249px;
+    height: 96px;
+    left: 676px;
+    top: 60px;
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 95px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFD600;
+}
+
+.flogo{
+    position: absolute;
+    width: 155px;
+    height: 152.39px;
+    left: 515px;
+    top: 40px;
+}
+
+.flogo img{
+    object-fit: cover;
+    width: 155px;
+    height: 152.39px;
+}

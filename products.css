@@ -1,0 +1,797 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Kavivanar';
+    src: url('./Assets/Kavivanar-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+  
+body {
+    margin: 0;
+    font-family: "Kavivanar";
+    background-color: var(--bg);
+    color: #fff;
+    font-size: 16px;
+}
+
+.headerContainer{
+    position: fixed;
+    display: flex;
+    max-width: 100vw;
+    height: 20vh;
+    padding: 0 2em;
+    border-radius: 0px 0px 10px 10px;
+    inset: 0;
+    background-color: #FDD86C;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+    z-index: 5;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 6em;
+    height: 60%;
+    left: 0;    
+    z-index: -2;
+    outline: 1px transparent;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.headerContainer .Product{
+    margin: 0px 40px;
+    padding: 0 0 0 10px;
+    /* right: 30px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: "Kavivanar";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #46453F;
+    outline: none;
+}
+
+.headerContainer .Home, .headerContainer .AboutUs, .headerContainer .ContactUs{
+    margin: 0px 40px;
+    padding: 0 0 0 10px;
+    /* right: 30px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: "Kavivanar";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    outline: none;
+}
+
+div{
+    left: 0;
+    margin: 0;
+}
+
+nav{
+    position: relative;
+    /* outline: 1px solid red; */
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.maincourse{
+    position: absolute;
+    width: 406px;
+    height: 95px;
+    left: calc(50% - 406px/2 - 3px);
+    top: 286px;
+    justify-content: center;
+    background: #FF971A;
+    border-radius: 5px;
+
+    position: absolute;
+    width: 800px;
+    height: 102px;
+    left: calc(50% - 800px/2 - 3px);
+    top: 279px;
+
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 95px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.foodbg1{
+    position: absolute;
+    width: 1270px;
+    height: 1327px;
+    left: calc(50% - 1270px/2 - 3px);
+    top: 341px;
+    justify-content: center;
+    background: #FFB347;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.mainbg1{
+    position: absolute;
+    width: 1184px;
+    height: 362px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 48px;
+
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.mainbg2{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 486px;
+
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.mainbg3{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 920px;
+
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.mainpic1{
+    position: absolute;
+    width: 398px;
+    height: 320px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 409px;
+    border-radius: 50px;
+    z-index: 3;
+    justify-content: center;
+    /* outline: 1px solid black; */
+}
+
+.mainpic1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    
+}
+
+.mainpic2{
+    position: absolute;
+    width: 398px;
+    height: 320px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 846px;
+    border-radius: 50px;
+    z-index: 3;
+    /* outline: 1px solid black; */
+}
+
+.mainpic2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    justify-content: center;
+}
+.mainpic3{
+    position: absolute;
+    width: 398px;
+    height: 320px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 1280px;
+    border-radius: 50px;
+    z-index: 3;
+    /* outline: 1px solid black; */
+}
+
+.mainpic3 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.mainprice1{
+    position: absolute;
+    width: 302px;
+    height: 157px;
+    left: 600px;
+    top: 381px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.maindes1{
+    position: absolute;
+    width: 694px;
+    height: 244px;
+    left: 600px;
+    top: 495px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.mainprice2{
+    position: absolute;
+    width: 687px;
+    height: 59px;
+    left: 600px;
+    top: 904px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.maindes2{
+    position: absolute;
+    width: 687px;
+    height: 94px;
+    left: 600px;
+    top: 1006px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.mainprice3{
+    position: absolute;
+    width: 352px;
+    height: 83px;
+    left: 600px;
+    top: 1310px;
+
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.maindes3{
+    position: absolute;
+    width: 687px;
+    height: 141px;
+    left: 600px;
+    top: 1419px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.sidedish{
+    position: absolute;
+    width: 406px;
+    height: 95px;
+    left: calc(50% - 406px/2 - 3px);
+    top: 1748px;
+    justify-content: center;
+    background: #FF971A;
+    border-radius: 5px;
+
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 95px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.foodbg2{
+    position: absolute;
+    width: 1270px;
+    height: 914px;
+    left: calc(50% - 1270px/2 + 2px);
+    top: 1795px;
+    justify-content: center;
+    background: #FFB347;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.sidebg1{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 73px;
+    
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.sidebg2{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 500px;
+    
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.sidepic1{
+    position: absolute;
+    width: 399px;
+    height: 324px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 1885px;
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.sidepic1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.sidepic2{
+    position: absolute;
+    width: 398px;
+    height: 326px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 2322px;
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.sidepic2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.sideprice1{
+    position: absolute;
+    width: 687px;
+    height: 59px;
+    left: 600px;
+    top: 1942px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.sidedes1{
+    position: absolute;
+    width: 687px;
+    height: 94px;
+    left: 600px;
+    top: 2047px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.sideprice2{
+    position: absolute;
+    width: 696px;
+    height: 59px;
+    left: 600px;
+    top: 2357px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;  
+    z-index: 3;
+}
+
+.sidedes2{
+    position: absolute;
+    width: 696px;
+    height: 141px;
+    left: 600px;
+    top: 2451px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.beverages{
+    position: absolute;
+    width: 406px;
+    height: 95px;
+    left: calc(50% - 406px/2 - 6px);
+    top: 2796px;
+    justify-content: center;
+    background: #FF971A;
+    border-radius: 5px;
+
+    position: absolute;
+    width: 800px;
+    height: 102px;
+    left: calc(50% - 800px/2 - 6px);
+    top: 2789px;
+
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 95px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.foodbg3{
+    position: absolute;
+    width: 1265px;
+    height: 911px;
+    left: calc(50% - 1265px/2 - 3.5px);
+    top: 2848px;
+    justify-content: center;
+    background: #FFB347;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.bevbg1{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 70px;
+    
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.bevbg2{
+    position: absolute;
+    width: 1184px;
+    height: 358px;
+    left: calc(50% - 1184px/2 - 3px);
+    top: 495px;
+
+    background: rgba(253, 216, 108, 0.41);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.bevpic1{
+    position: absolute;
+    width: 401px;
+    height: 325px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 2937px;
+    justify-content: center;
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.bevpic1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.bevpic2{
+    position: absolute;
+    width: 399px;
+    height: 327px;
+    left: calc(50% - 398px/2 - 375px);
+    top: 3360px;
+    justify-content: center;
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.bevpic2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.bevprice1{
+    position: absolute;
+    width: 676px;
+    height: 59px;
+    left: 600px;
+    top: 2992px;
+
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF; 
+    z-index: 3;
+}
+
+.bevdes1{
+    position: absolute;
+    width: 676px;
+    height: 94px;
+    left: 600px;
+    top: 3108px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.bevprice2{
+    position: absolute;
+    width: 682px;
+    height: 59px;
+    left: 600px;
+    top: 3419px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.bevdes2{
+    position: absolute;
+    width: 682px;
+    height: 94px;
+    left: 600px;
+    top: 3524px;
+    
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.section{
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footercontainer{
+    position: absolute;
+    display: flex;
+    max-width: 100vw;
+    height: 235px;
+    top: 3902px;
+    padding: 0 47.44em;
+    background: #46453F;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    outline: 1px solid black;
+}
+
+.fdetail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.Etext{
+    position: absolute;
+    width: 249px;
+    height: 96px;
+    left: 519px;
+    top: 60px;
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 95px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFD600;
+}
+
+.fcontactus{
+    position: absolute;
+    width: 246px;
+    height: 100px;
+    left: 838px;
+    top: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #C85353;
+    border-radius: 15px;
+}
+
+.fContactUs{
+    position: absolute;
+    width: 246px;
+    height: 100px;
+    left: 838px;
+    top: 70px;
+    border-radius: 15px;
+    text-decoration:none;
+    display: flex;
+    font-family: 'Kavivanar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    inset: 0;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.flogo{
+    position: absolute;
+    width: 155px;
+    height: 152.39px;
+    left: 358px;
+    top: 40px;
+}
+
+.flogo img{
+    object-fit: cover;
+    width: 155px;
+    height: 152.39px;
+}
